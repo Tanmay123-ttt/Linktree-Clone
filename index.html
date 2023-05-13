@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linktree Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="share-button">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          enable-background="new 0 0 24 24"
+          class="sc-gKsewC iPWGYb"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Tanmay Jauhari Avatar"
+        />
+      </div>
+      <h1>@tanmayjauhari</h1>
+      <a class="tile" href="https://www.instagram.com/">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <p>Instagram</p>
+        <div class="tile-share-button" link="https://www.instagram.com/">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            enable-background="new 0 0 24 24"
+            class="sc-gKsewC iPWGYb"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </a>
+      <a
+        class="tile"
+        href="https://www.linkedin.com/in/tanmay-jauhari-69939b1aa/"
+      >
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <p>Linkedin</p>
+        <div
+          class="tile-share-button"
+          link="https://www.linkedin.com/in/tanmay-jauhari-69939b1aa/"
+        >
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            enable-background="new 0 0 24 24"
+            class="sc-gKsewC iPWGYb"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </a>
+      <a class="tile" href="https://github.com/Tanmay123-ttt">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <p>Github</p>
+        <div class="tile-share-button" link="https://github.com/Tanmay123-ttt">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            enable-background="new 0 0 24 24"
+            class="sc-gKsewC iPWGYb"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M10.6464 3.85347L11 4.20702L11.7071 3.49992L11.3536 3.14636L8.35355 0.146362H7.64645L4.64645 3.14636L4.29289 3.49992L5 4.20702L5.35355 3.85347L7.5 1.70702V9.49992V9.99992H8.5V9.49992V1.70702L10.6464 3.85347ZM1 5.49994L1.5 4.99994H4V5.99994H2V14.9999H14V5.99994H12V4.99994H14.5L15 5.49994V15.4999L14.5 15.9999H1.5L1 15.4999V5.49994Z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </div>
+      </a>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
